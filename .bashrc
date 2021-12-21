@@ -34,6 +34,7 @@ pathprepend() {
 export SCRIPTS="$HOME/scripts"
 export REPOS=$HOME/repos
 export GHREPOS="$REPOS/github.com"
+export SPARK_HOME="$HOME/.local/bin/spark-3.1.2-bin-hadoop2.7"
 
 # aliases ---------------------------------------------------------------------
 alias vi=nvim
@@ -47,7 +48,8 @@ alias vimrc="nvim $HOME/.config/nvim/init.vim"
 # path ------------------------------------------------------------------------
 pathprepend \
   "$HOME/.local/bin" \
-  "$SCRIPTS"
+  "$SCRIPTS" \
+  "$SPARK_HOME"
 
 
 # don't put duplicate lines or lines starting with space in the history.
