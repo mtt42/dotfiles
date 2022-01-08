@@ -39,17 +39,18 @@ export SPARK_HOME="$HOME/.local/bin/spark-3.1.2-bin-hadoop2.7"
 # aliases ---------------------------------------------------------------------
 alias vi=nvim
 alias vim=nvim
-alias py=python3
+alias python=python3
 alias pip=pip3
 alias bashrc="nvim $HOME/.bashrc"
 alias vimrc="nvim $HOME/.config/nvim/init.vim"
+alias homepage="cd $GHREPOS/MoreThanThis42/accidentally-bored.me"
 
 
 # path ------------------------------------------------------------------------
 pathprepend \
   "$HOME/.local/bin" \
   "$SCRIPTS" \
-  "$SPARK_HOME"
+  "$SPARK_HOME/bin"
 
 
 # don't put duplicate lines or lines starting with space in the history.
