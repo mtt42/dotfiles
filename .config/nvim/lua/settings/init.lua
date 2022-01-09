@@ -1,5 +1,9 @@
--- settings
+-- variables
 local set = vim.opt
+
+-- imports
+require("notify")
+
 
 -- gui
 set.showmode       = false
