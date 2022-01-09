@@ -44,7 +44,7 @@ alias pip=pip3
 alias bashrc="nvim $HOME/.bashrc"
 alias vimrc="nvim $HOME/.config/nvim/init.vim"
 alias homepage="cd $GHREPOS/MoreThanThis42/accidentally-bored.me"
-
+alias packer-config="nvim $HOME/.config/nvim/lua/packer-config/init.lua"
 
 # path ------------------------------------------------------------------------
 pathprepend \
@@ -162,3 +162,7 @@ if ! shopt -oq posix; then
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
